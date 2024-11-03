@@ -14,6 +14,13 @@ function submitClick(event){
         <td> ${lastName} </td>
         <td> ${idNumber} </td>
         <td> ${jobTitle} </td>
-        <td> ${annualSalary} </td>
+        <td> $${annualSalary} </td>
+    </tr>
     `
+    let budgetPerMonth = annualSalary / 12
+    let monthlyBudget = document.querySelector("#totalMonthly")
+    monthlyBudget.innerHTML += `
+    <p> Total Monthly: $${budgetPerMonth} </p>
+    `
+
 }
