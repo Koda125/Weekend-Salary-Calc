@@ -25,7 +25,7 @@ function submitClick(event){
     let budgetPerMonth = annualSalary / 12
     let monthlyBudget = document.querySelector("#totalMonthly")
     monthlyBudget.textContent += `
-    $${budgetPerMonth} 
+    $${budgetPerMonth}
     `
 
 document.getElementById("employeeForm").reset()

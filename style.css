@@ -1,3 +1,10 @@
+h1 {
+    font-family: monospace;
+    text-align: center;
+}
+
+
+
 table {
     width: 100%;
     text-align: left;
@@ -26,5 +33,6 @@ table {
   footer {
     font-family: fantasy;
     color: black;
+    text-align: center;
     
   }
