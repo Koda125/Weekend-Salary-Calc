@@ -17,7 +17,9 @@ function submitClick(event){
         <td> ${idNumber} </td>
         <td> ${jobTitle} </td>
         <td> $${annualSalary} </td>
-        <td> <button onClick="deleteEmployee(event)" id="deleteButton>Delete</button> </td>
+        <td> 
+        <button onClick="deleteEmployee(event)" id="deleteButton">Delete</button> 
+        </td>
     </tr>
     `
     let budgetPerMonth = annualSalary / 12
@@ -26,4 +28,10 @@ function submitClick(event){
     $${budgetPerMonth} 
     `
 
+document.getElementById("employeeForm").reset()
+
+}
+
+function deleteEmployee(event) {
+    event.target.parentNode.parentNode.remove()
 }
