@@ -1,4 +1,6 @@
-console.log('Hello World!')
+
+
+
 function submitClick(event){
     event.preventDefault(event)
     const firstName = document.querySelector("#firstNameInput").value
@@ -15,12 +17,13 @@ function submitClick(event){
         <td> ${idNumber} </td>
         <td> ${jobTitle} </td>
         <td> $${annualSalary} </td>
+        <td> <button onClick="deleteEmployee(event)" id="deleteButton>Delete</button> </td>
     </tr>
     `
     let budgetPerMonth = annualSalary / 12
     let monthlyBudget = document.querySelector("#totalMonthly")
-    monthlyBudget.innerHTML += `
-    <p> Total Monthly: $${budgetPerMonth} </p>
+    monthlyBudget.textContent += `
+    $${budgetPerMonth} 
     `
 
 }

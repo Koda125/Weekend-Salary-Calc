@@ -12,6 +12,7 @@ table {
     min-width: 3.5em;
   }
   thead {
+    font-family: Arial, Helvetica, sans-serif;
     background: #7a7a7a;
     color: #fcfcfc;
   }
@@ -21,4 +22,9 @@ table {
   tbody tr:nth-child(even){
     background: #dcdcdc;
   }
-  
+
+  footer {
+    font-family: fantasy;
+    color: black;
+    
+  }
