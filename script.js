@@ -1,13 +1,13 @@
 
 
-
+let totalAnnualSalary = 0
 function submitClick(event){
     event.preventDefault(event)
     const firstName = document.querySelector("#firstNameInput").value
     const lastName = document.querySelector("#lastNameInput").value
     const idNumber = document.querySelector("#idInput").value
     const jobTitle = document.querySelector("#titleInput").value
-    const annualSalary = document.querySelector("#annualSalaryInput").value
+    const annualSalary = Number(document.querySelector("#annualSalaryInput").value)
     console.log(firstName, lastName, idNumber, jobTitle, annualSalary)
     let employeeTable = document.querySelector("#employeeList tbody")
     employeeTable.innerHTML += `
@@ -22,11 +22,12 @@ function submitClick(event){
         </td>
     </tr>
     `
-    let budgetPerMonth = annualSalary / 12
+    totalAnnualSalary += annualSalary
+console.log('My salary selector', totalAnnualSalary)
+    let budgetPerMonth = totalAnnualSalary / 12
     let monthlyBudget = document.querySelector("#totalMonthly")
-    monthlyBudget.textContent += `
-    $${budgetPerMonth}
-    `
+    monthlyBudget.innerText = budgetPerMonth
+
 
 document.getElementById("employeeForm").reset()
 

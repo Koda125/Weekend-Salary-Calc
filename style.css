@@ -36,3 +36,6 @@ table {
     text-align: center;
     
   }
+  .over-budget {
+    color: red;
+  }
