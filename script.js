@@ -29,11 +29,11 @@ console.log('My salary selector', totalAnnualSalary)
     monthlyBudget.innerText = budgetPerMonth
 
 // Conditionally style the footer when monthly budget exceeds 20000
-if (monthlyBudget > 20000){
+if (budgetPerMonth > 20000){
     const footer = document.querySelector("footer")
     footer.classList.add("over-budget")
 }
-
+console.log('Monthly budget is: ', budgetPerMonth)
 
 document.getElementById("employeeForm").reset()
 
