@@ -44,7 +44,7 @@
         type="number">
       </form>
       <form onsubmit="submitClick(event)">
-        <button id="submitButton">Submit</button>
+        <button data-testid="submitButton" id="submitButton">Submit</button>
       </form>
 
    </section>
@@ -66,8 +66,6 @@
    </section>
    
   </main>
-  <footer  >
-    <p>Total Monthly Budget: $<span id="totalMonthly" >0</span></p>
-  </footer>
+  <footer id="totalMonthly">Total Monthly Budget: $</footer>
 </body>
 </html>
